@@ -14,19 +14,19 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.amber,
       ),
       title: 'Tic Tac Toe',
-      home: const myHomePage(),
+      home: const MyHomePage(),
     );
   }
 }
 
-class myHomePage extends StatefulWidget {
-  const myHomePage({super.key});
+class MyHomePage extends StatefulWidget {
+  const MyHomePage({super.key});
 
   @override
-  State<myHomePage> createState() => _myHomePageState();
+  State<MyHomePage> createState() => _MyHomePageState();
 }
 
-class _myHomePageState extends State<myHomePage> {
+class _MyHomePageState extends State<MyHomePage> {
   // Create a 3x3 board
   // Each cell will be represented by a string
   List<List<String>> _board = [
